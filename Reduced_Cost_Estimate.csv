@@ -4,8 +4,8 @@ Monthly cost
 Rationale:  Reduce the cost by use reversed instances 1 year period and reduce instance.									
 Changes:									
 "The first, Change ec2-instance service from 6 to, 4 instances and choose one-year reserve instances for the same instance type. "									
-"The second, Buy one-year reserve instances."									
-"Don't use the VPN, I remove it."									
+"The second, Buy one-year reserve instances."	
+
 									
 Detailed Estimate									
 Group hierarchy	Region	Description	Service	Upfront	Monthly	First 12 months total	Currency	Status	Configuration summary
