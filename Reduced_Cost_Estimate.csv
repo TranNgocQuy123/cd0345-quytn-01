@@ -1,0 +1,26 @@
+Estimate summary									
+Monthly cost									
+5526.14									
+Rationale:  Reduce the cost by use reversed instances 1 year period and reduce instance.									
+Changes:									
+"The first, Change ec2-instance service from 6 to, 4 instances and choose one-year reserve instances for the same instance type. "									
+"The second, Buy one-year reserve instances."									
+"Don't use the VPN, I remove it."									
+									
+Detailed Estimate									
+Group hierarchy	Region	Description	Service	Upfront	Monthly	First 12 months total	Currency	Status	Configuration summary
+My Estimate	US East (N. Virginia)	estimate for route 53	Amazon Route 53	0	183	2196	USD		"Number of Elastic Network Interfaces (2), Hosted Zones (1)"
+My Estimate	US East (N. Virginia)		Application Load Balancer	0	174.11	2089.32	USD		Number of Application Load Balancers (1)
+My Estimate	US East (N. Virginia)		Amazon EC2 	0	1611.68	19340.16	USD		"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 4), Advance EC2 instance (m5a.4xlarge), Pricing strategy (Compute Savings Plans 1yr  No Upfront), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate	US East (N. Virginia)		Amazon RDS for MySQL	0	2572.304	30867.65	USD		"Storage amount (30 GB), Storage for each RDS instance (General Purpose SSD (gp2)), Nodes (2), Instance type (db.m5.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (Reserved 1yr No Upfront)"
+My Estimate	US East (N. Virginia)		S3 Standard	0.32768	23.55	282.93	USD		"S3 Standard storage (1 TB per month), S3 Standard Average Object Size (16 MB)"
+My Estimate	US East (N. Virginia)		Data Transfer	0	0	0	USD		
+My Estimate	US East (N. Virginia)		AWS Web Application Firewall (WAF)	0	31.2	374.4	USD		"Number of Web Access Control Lists (Web ACLs) utilized (2 per month), Number of Rules added per Web ACL (2 per month), Number of Rule Groups per Web ACL (2 per month), Number of Rules inside each Rule Group (2 per month), Number of Managed Rule Groups per Web ACL (2 per month)"
+My Estimate	US East (N. Virginia)		Network Address Translation (NAT) Gateway	0	65.7	788.4	USD		Number of NAT Gateways (2)
+My Estimate	US East (N. Virginia)		Public IPv4 Address	0	14.6	175.2	USD		"Number of In-use public IPv4 addresses (2), Number of Idle public IPv4 addresses (2)"
+My Estimate	US East (N. Virginia)		Amazon CloudFront	0	850	10200	USD		"Data transfer out to internet (10000 GB per month), Number of requests (HTTPS) (200 per month)"
+									
+									
+									
+Acknowledgement									
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."									
